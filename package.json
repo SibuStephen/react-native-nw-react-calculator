@@ -32,7 +32,9 @@
     "serve-web": "grunt serve-web",
     "serve-web:dist": "grunt serve-web:dist",
     "start": "node_modules/react-native/packager/packager.sh",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "window": {
     "toolbar": true,
@@ -64,11 +66,12 @@
     "object-assign": "^4.0.1",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-native": "^0.13.2",
+    "react-native": "^0.39.1",
     "react-native-cli": "^0.1.7",
     "react-router": "^1.0.0",
     "serve-static": "^1.10.0",
-    "uniqid": "^1.0.0"
+    "uniqid": "^1.0.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "babel": "^5.8.29",
@@ -108,5 +111,6 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.12.3",
     "webpack-dev-server": "^1.12.1"
-  }
+  },
+  "snyk": true
 }
